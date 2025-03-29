@@ -1,0 +1,34 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "v1.0.0 - Pack by Mittens4all - Detect Player Effects",
+        "name": "Detect Effects",
+        "uuid": "0d8a1e0d-4023-4b54-965a-cdfa22412406",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 21, 70 ]
+    },
+    "modules": [
+        {
+            "description": "Scripts Module",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "2405ea71-91e6-4b65-9361-546ac77ce97b",
+            "entry": "scripts/main.js",
+            "version": [ 1, 0, 0 ]
+        }
+    ],
+    "dependencies": [ 
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.17.0"
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "mittens4all"
+        ],
+        "license": "MIT",
+        "url": "https://github.com/mittens4all/",
+        "product_type": "addon"
+    }
+}
