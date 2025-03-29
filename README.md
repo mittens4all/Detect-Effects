@@ -1,4 +1,4 @@
-# Detect Effect
+# Detect Effects
 
 This behavior pack uses scripts to detect player effects and assign it to a scoreboard value.
 
