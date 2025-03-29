@@ -37,7 +37,7 @@ const objWeaving = world.scoreboard.getObjective("detect:weaving") ?? world.scor
 const objWindCharged = world.scoreboard.getObjective("detect:wind_charged") ?? world.scoreboard.addObjective("detect:wind_charged");
 const objWither = world.scoreboard.getObjective("detect:wither") ?? world.scoreboard.addObjective("detect:wither");
 
-function detectEffect() {
+function detectEffects() {
     const allPlayers = world.getPlayers();
     for (const player of allPlayers) {
         objAbsorption.setScore(player, player.getEffect('absorption') ? 1 : 0);
@@ -78,4 +78,4 @@ function detectEffect() {
         objWither.setScore(player, player.getEffect('wither') ? 1 : 0);
     }
 };
-system.runInterval(detectEffect, 1);
+system.runInterval(detectEffects, 1);
